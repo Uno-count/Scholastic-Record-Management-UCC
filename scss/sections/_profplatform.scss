@@ -1,0 +1,64 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+//prof platform
+
+
+#main-bar{
+	position: absolute;
+	width: 100%;
+	margin-top: var(--topNavbarHeight)!important;
+	position: fixed;
+	z-index: 1;
+	background-color: $gray-500 !important;
+
+
+
+}
+#main-bar .nav-item{
+	margin-left: 10px;
+	font-size: 17px;
+	margin-top: 15px;
+	
+}
+
+#cards{
+	padding-top: 300px !important;
+}
+
+#viewload a{
+	text-decoration: none ;
+}
+
+
+
+#views{
+	padding-top: 200px !important;
+}
+
+#contentview{
+	padding-top: 200px !important;
+}
+
+.scprnt{
+	font-size: 10px;
+}
+
+.scprntsub{
+	font-size: 10px;
+}
+
+
+
+//print section
+.ol{
+    text-decoration: overline !important;
+}
+
+
+.formpass{
+	width: 50% !important;
+}
+.profname{
+	text-decoration: none !important;
+	color: white !important;
+}

@@ -1,0 +1,77 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+// ---> OffCanvas
+span {
+	color: $white !important;
+	&:hover {
+		font-size: larger;
+		transition: 0.3s;
+	}
+}
+.nav-link {
+	&:hover {
+		background-color: $secondary;
+	}
+}
+:root {
+	--offcanvas-width: 300px;
+	--topNavbarHeight: 65.5px;
+}
+.sidebar-link {
+	display: flex;
+	align-items: center;
+}
+.sidebar-link .right-icon {
+	display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+	transform: rotate(180deg);
+	transition: all ease 0.25s;
+}
+.sidebar-nav {
+	background-color: $primary;
+	width: var(--offcanvas-width);
+}
+@media (min-width: 992px) {
+	body {
+		overflow: auto !important;
+	}
+	main {
+		margin-left: var(--offcanvas-width);
+		height: calc(100% - var(--topNavbarHeight));
+		margin-top: var(--topNavbarHeight);
+	}
+	.offcanvas-backdrop::before {
+		display: none;
+	}
+	.sidebar-nav {
+		-webkit-transform: none;
+		transform: none;
+		visibility: visible !important;
+		height: calc(100% - var(--topNavbarHeight));
+		top: var(--topNavbarHeight);
+	}
+}
+// .offcanvas {
+// 	@include gradient;
+// 	width: var(--offcanvas-width);
+// 	color: $white;
+
+// 	@media (min-width: 992px) {
+// 		transform: none;
+// 		visibility: visible !important;
+// 		top: var(--topNavbarHeight);
+// 		height: calc(100 - var(--topNavbarHeight));
+
+// 		body {
+// 			overflow: auto !important;
+// 		}
+// 		.modal-backdrop {
+// 			display: none;
+// 		}
+// 	}
+// 	.holder {
+// 		margin-left: var(--offcanvas-width);
+// 	}
+// }

@@ -1,0 +1,28 @@
+.mt-n1 {
+    margin-top: -15px !important;
+  }
+
+.plogo{
+    width: 100px;
+    height: 80px;
+   
+}
+// .ps{
+//     padding-left: 10px !important;
+// }
+.bor{
+    border: 1px solid black;
+    font-size: 12px;
+}
+
+@media print{
+    #printbtn{
+    display : none;
+    }
+}
+
+.leftside, .rightside{
+  
+    width: 100%;
+}
+

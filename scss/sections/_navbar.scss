@@ -1,0 +1,43 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+nav {
+	background-color: $primary !important;
+
+	// li {
+	// 	padding: 0.07rem;
+	// 	a {
+	// 		color: $white !important;
+	// 		text-transform: capitalize;
+	// 		font-weight: 600;
+	// 		cursor: pointer;
+	// 		&:hover {
+	// 			color: $secondary !important;
+	// 			transition: 0.4s;
+	// 		}
+	// 	}
+	// }
+}
+//LOGO
+img {
+	width: 70px;
+	height: 50px;
+	margin-right: 20px;
+}
+
+.navbar-brand {
+	text-transform: capitalize;
+	font-weight: 700;
+	color: $secondary !important;
+	cursor: default;
+}
+.dropdown-item {
+	color: black !important;
+	&:hover {
+		background-color: $secondary !important;
+	}
+}
+
+.username{
+	color: antiquewhite;
+}

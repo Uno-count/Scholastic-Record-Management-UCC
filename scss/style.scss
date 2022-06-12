@@ -1,0 +1,15 @@
+@use "./custom";
+
+// IMPORT THE COMPONENTS
+@use "./components/mixins";
+
+// IMPORT THE SECTIONS
+@use "./sections/navbar";
+@use "./sections/sidebar";
+@use "./sections/login";
+@use "./sections/profplatform";
+@use "./sections/printform";
+
+
+
+

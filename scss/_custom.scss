@@ -1,0 +1,205 @@
+// my theme color
+$blue-dark: #000f14;
+$blue-light: #003d52;
+$orange: #f4a261;
+$success: #2a9d8f;
+
+// scss-docs-start gray-color-variables
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+// garay-colors-variables
+
+// scss-docs-start theme-color-variables
+$primary: $blue-dark;
+$secondary: $orange;
+
+// scss-docs-end theme-color-variables
+
+//IMPORT BOOTSTRAP 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// css datatables
+@import "../node_modules/bootstrap/scss/tables";
+.table {
+	--#{$variable-prefix}table-bg: $primary;
+}
+//PAGES
+//HEADER
+.p-header {
+	padding: 15px;
+	box-sizing: border-box;
+	background-color: $gray-200;
+	font-size: 25px;
+	line-height: 50px;
+	font-weight: 500;
+}
+//BREADCRUMBS
+
+.breadcrumb-div {
+	width: 100%;
+	background-color: transparent;
+	padding: 8px 15px;
+	border-top: 1px solid $primary;
+	border-bottom: 1px solid $primary;
+	font-size: 90%;
+	color: $black !important;
+	$breadcrumb-divider: quote(">");
+	a {
+		color: $primary !important;
+		&:hover {
+			color: $secondary !important;
+		}
+	}
+	.breadcrumb {
+		background: transparent;
+		padding: 0;
+		margin: 0;
+		.fa {
+			margin-right: 5px;
+		}
+	}
+	.text-right {
+		a {
+			.fa {
+				margin-right: 2px;
+			}
+		}
+	}
+}
+//panels , Sections & forms
+
+.panel {
+	background-color: $gray-200;
+	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 14px;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 1.75em;
+	.panel-title {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: $black;
+			margin: 10px;
+			line-height: 50px;
+		}
+	}
+}
+.panel-heading {
+	padding: 5px;
+	.panel-title {
+		margin-top: 10px;
+		padding-left: 15px;
+
+		small {
+			color: $gray-100;
+			font-size: 75%;
+			font-style: italic;
+			margin-left: 5px;
+		}
+	}
+	.pacing{
+		line-height: 20px;
+	}
+}
+
+.section {
+	padding: 30px 0;
+	.section-title {
+		.title {
+			margin-top: 0;
+		}
+	}
+}
+.form-spacing {
+	//inside content
+	margin-left: 15%;
+	width: 66.6666666667%;
+	float: left;
+	position: relative;
+	min-height: 1px;
+
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+.form-group {
+	//inside content
+	// margin-top: 15px;
+	margin: 20px;
+}
+.form-groupp {
+
+	margin-left: 30%;
+	margin-right: 30%;
+}
+.table {
+	border-color: green !important;
+}
+
+.numbercounter {
+	margin-top: -80px;
+	margin-left: 200px;
+	font-size: 40px;
+}
+
+
+.content-header{
+	padding: 15px;
+	display: block;
+	box-sizing: border-box;
+}
+.content-header h1{
+	font-family: inherit !important;
+	font-weight: 200 !important;
+	line-height: 1.2rem !important;
+	color: inherit;
+}
+.card{
+	box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2) !important;
+	margin-bottom: 1rem;
+}
+
+.text-right{
+	text-align: right !important;
+}
+.card-theme{
+	background-color: $secondary !important;
+	color: black !important;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
